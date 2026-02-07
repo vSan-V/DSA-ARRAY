@@ -48,14 +48,14 @@ class Optimal{
             if(arr1[i]<arr2[j]){
                 if(list.isEmpty() || list.get(list.size()-1) != arr1[i]){
                     list.add(arr1[i]);
-                    i++;
                 }
+                    i++;
             }
             else if(arr2[j]<arr1[i]){
                  if(list.isEmpty() || list.get(list.size()-1) != arr2[j]){
                     list.add(arr2[j]);
-                    j++;
                 }
+                    j++;
             }
             else{
                 if(list.isEmpty() || list.get(list.size()-1) != arr1[i]){
@@ -68,14 +68,14 @@ class Optimal{
         while(i<a){
                 if(list.isEmpty() || list.get(list.size()-1) != arr1[i]){
                     list.add(arr1[i]);
-                    i++;
                 }
+                    i++;
             }
         while(j<b){
             if(list.isEmpty() || list.get(list.size()-1) != arr2[j]){
                     list.add(arr2[j]);
-                    j++;
                 }
+                    j++;
         }
         System.out.println(list);
         
